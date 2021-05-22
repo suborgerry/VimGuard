@@ -1,0 +1,589 @@
+@import 'fonts'
+/**/
+@import 'rebase'
+/**/
+
+body
+    width: 100%
+    font-family: 'Montserrat', sans-serif
+    overflow-x: hidden
+    background: url(../images/background.jpg)
+    background-size: cover
+
+.header
+    padding: 45px 112px 0 112px
+    display: flex
+    flex-direction: column
+    min-height: 70vh
+
+.header_first_line
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header_first_line_left
+    display: flex
+    align-items: center
+
+.header_first_line_image
+    max-height: 40px
+
+.header_first_line_menu
+    display: flex
+    align-items: center
+    margin-left: 60px
+
+.header_first_line_items
+    display: flex
+    align-items: center
+
+.header_first_line_item
+    list-style: none
+    display: flex
+    align-items: center
+    a
+        text-decoration: none
+        font-weight: 500
+        font-size: 18px
+        color: #D0D9DE
+        padding: 20px
+        &:hover
+            color: #fff
+            cursor: pointer
+
+.header_first_line_lang
+    display: flex
+    align-items: center
+    img
+        width: 21px
+        height: 15px
+        margin-right: 5px
+    button
+        outline: 0
+        border: 0
+        background: transparent
+        font-size: 18px
+        color: #FFF
+        display: flex
+        align-items: center
+        &::before
+            content: url(../images/arrowdown.png)
+            display: block
+            position: relative
+            bottom: 2px
+            margin-right: 3px
+        &:hover
+            cursor: pointer
+
+.header_info_title
+    font-size: 40px
+    font-weight: 800
+    color: #FFF
+    max-width: 580px
+    letter-spacing: 0.02em
+    margin-bottom: 40px
+    font-family: 'Montserrat-Bold', sans-serif
+
+.header_info_text
+    font-size: 24px
+    max-width: 418px
+    color: #FFF
+
+.header_info_button
+    border: 0
+    box-shadow: -1px -1px 0px #6BA89D, -10px -10px 20px rgba(107, 157, 145, 0.15), 10px 10px 20px rgba(71, 103, 93, 0.4)
+    border: 0.5px solid #02B3AF
+    background: linear-gradient(180deg, #02B3AF 0%, #1DDEDA 100%)
+    border-radius: 40px
+    font-size: 28px
+    letter-spacing: 0.02em
+    color: #FFF
+    padding: 15px 45px
+    margin-top: 40px
+    &:hover
+        cursor: pointer
+        background: linear-gradient(180deg, #0ACAC6 0%, #15FCF7 100%), linear-gradient(157.89deg, #FDFDFD 18.84%, #DEDEDE 86.18%)
+        box-shadow: -12px -12px 20px #0acac6, 10px 10px 20px rgb(166 200 198 / 90%)
+    &:active
+        background: linear-gradient(180deg, #02B3AF 0%, #1DDEDA 100%)
+        box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.25), inset 5px 5px 10px rgba(166, 180, 200, 0.75)
+
+.main
+    margin-top: 200px
+
+.main_about
+    padding: 0 112px
+
+.main_about_title
+    letter-spacing: 0.02em
+    font-weight: 800
+    font-size: 40px
+    text-align: center
+    font-family: 'Montserrat-Bold', sans-serif
+
+.main_about_container
+    display: flex
+    justify-content: space-between
+    margin-top: 20px
+
+.main_about_container_left
+    margin-top: 100px
+    
+.main_about_container_left_text
+    max-width: 618px
+    font-size: 18px
+    letter-spacing: 0.02em
+    color: #253238
+    line-height: 150%
+
+.main_about_container_left_button
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 20px rgba(166, 180, 200, 0.7)
+    background: linear-gradient(134.17deg, #FFFFFF 4.98%, #F0F0F0 94.88%), linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%)
+    border-radius: 40px
+    color: #7C9EE2
+    padding: 23px 97px
+    font-size: 28px
+    letter-spacing: 0.02em
+    border: 0
+    margin-top: 67px
+    &:hover
+        cursor: pointer
+        background: linear-gradient(157.89deg, #FDFDFD 18.84%, #DEDEDE 86.18%)
+        box-shadow: -12px -12px 20px #FFFFFF, 10px 10px 20px rgba(166, 180, 200, 0.9)
+    &:active
+        background: linear-gradient(134.17deg, #FFFFFF 4.98%, #F0F0F0 94.88%), linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%)
+        box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75)
+
+
+.main_about_container_right_img
+    max-width: 517px
+    max-height: 441px
+
+.main_services
+    display: flex
+    justify-content: space-between
+    padding: 0 112px
+    margin-top: 120px
+
+.main_services_item
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.3), 10px 10px 20px rgba(166, 180, 200, 0.2), -1px -1px 0px #B6BFC9
+    box-sizing: border-box
+    border: 1px solid rgba(157, 165, 180, 0.5)
+    border-radius: 3px
+    background: linear-gradient(134.17deg, #FCFDFF 4.98%, #F1F4F9 94.88%), linear-gradient(180deg, #344353 0%, #1B2735 100%)
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    width: 289px
+    height: 254px
+    padding: 0 30px
+    justify-content: flex-start
+    &:nth-child(1n+2)
+        margin-left: 20px
+    &:nth-child(1)
+        .main_services_item_logo
+            margin-top: -60px
+    &:nth-child(2)
+        .main_services_item_logo
+            margin-top: -35px
+    &:nth-child(3)
+        .main_services_item_logo
+            margin-top: -45px
+    &:nth-child(4)
+        .main_services_item_logo
+            margin-top: -45px
+
+.main_services_item_logo
+    position: absolute
+    // margin-top: -125px
+
+.main_services_item_title
+    color: #253238
+    font-size: 24px
+    text-align: center
+    letter-spacing: 0.02em
+    font-family: 'Montserrat-Bold', sans-serif
+    font-weight: 700
+    margin-top: 60px
+
+.main_services_item_text
+    letter-spacing: 0.02em
+    font-size: 18px
+    margin-top: 10px
+
+.main_reviews
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin-top: 160px
+    padding: 0 117px
+
+.main_reviews_title
+    letter-spacing: 0.02em
+    font-weight: 800
+    font-size: 40px
+    font-family: 'Montserrat-Bold', sans-serif
+    color: #253238
+
+.main_reviews_container
+    display: flex !important
+    align-items: center
+    justify-content: center
+    margin-top: 60px
+    margin-bottom: 40px
+
+.main_reviews_item
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.4), 10px 10px 20px rgba(166, 180, 200, 0.7), -1px -1px 0px #B6BFC9
+    background: linear-gradient(298.33deg, #FFFFFF 5.92%, #F0F0F0 113.93%), #FFFFFF
+    border-radius: 5px
+    width: 392px
+    height: 467px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin: auto
+    &::before
+        background-image: url(../images/quotes.png)
+        content: ""
+        display: block
+        position: absolute
+        width: 107px
+        height: 65px
+        width: inherit
+        background-repeat: no-repeat
+        background-position-x: right
+    &:nth-child(1n+2)
+        margin-left: 20px
+
+.main_reviews_item_title
+    font-weight: 600
+    font-size: 24px
+    margin-top: 50px
+    text-align: center
+
+.main_reviews_item_rating
+    display: flex
+    justify-content: center
+    margin-top: 20px
+
+.main_reviews_item_rating_star
+    width: 20px !important
+    height: 20px
+    &:nth-child(1n+2)
+        margin-left: 10px
+
+.main_reviews_item_text
+    padding: 0 26px
+    font-size: 18px
+    letter-spacing: 0.02em
+    color: #253238
+    margin-top: 20px
+
+.main_reviews_item_user
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom: 43px
+
+.main_reviews_item_user_photo
+    width: 51px !important
+    height: 51px
+
+.main_reviews_item_user_name
+    font-size: 24px
+    letter-spacing: 0.02em
+    color: #253238
+    margin-left: 16px
+
+.main_reviews
+    .owl-stage-outer
+        padding-bottom: 40px
+    .owl-nav
+        display: flex
+        justify-content: space-between
+        position: absolute
+        width: 97%
+        button
+            background: #F03836 !important
+            box-shadow: 0px 10px 10px rgba(240, 56, 54, 0.15)
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            position: relative
+            &:hover
+                background: #FFF !important
+                border: 2px solid #F03836
+                box-shadow: 0px 10px 10px rgba(240, 56, 54, 0.15)
+                img
+                    filter: invert(1)
+            &.owl-prev
+                img
+                    position: relative
+                    right: 2px
+            &.owl-next
+                img
+                    position: relative
+                    left: 2px
+    .owl-dots
+        position: absolute
+        top: 100%
+        button
+            background: #C4C4C4
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            &.active
+                background: #F03836
+            &:nth-child(1n+2)
+                margin-left: 10px
+
+.main_protection
+    padding: 0 112px
+    margin-top: 40px
+
+.main_protection_title
+    letter-spacing: 0.02em
+    font-weight: 800
+    font-size: 40px
+    color: #253238
+    text-align: center
+    font-family: 'Montserrat-Bold', sans-serif
+
+.main_protection_container
+    display: flex
+    justify-content: space-between
+    margin-top: 60px
+    
+.main_protection_container_item
+    width: 392px
+    height: fit-content
+    background: linear-gradient(298.33deg, #FFFFFF 5.92%, #F0F0F0 113.93%)
+    box-shadow: -12px -12px 20px rgba(0, 0, 0, 0.1), 10px 10px 20px rgba(104, 112, 124, 0.3), -1px -1px 0px #C9DAEC
+    border-radius: 5px
+
+.main_protection_container_item_about
+    display: flex
+    align-items: flex-start
+    padding: 25px
+    border-bottom: 1px solid #CED5DC
+
+.main_protection_container_item_about_info
+    display: flex
+    flex-direction: column
+    margin-left: 60px
+
+.main_protection_container_item_about_info_title
+    letter-spacing: 0.02em
+    font-size: 36px
+    font-weight: 700
+    font-family: 'Montserrat', sans-serif
+    max-width: 160px
+
+.main_protection_container_item_about_info_price
+    color: #F03836
+    letter-spacing: 0.02em
+    font-size: 24px
+    font-weight: 700
+    font-family: 'Montserrat', sans-serif
+
+.main_protection_container_item_about_info_oc
+    margin-top: 14px
+    img
+        &:first-child
+            margin-right: 12px
+
+.main_protection_container_item_features
+    display: flex
+    flex-direction: column
+    align-items: center
+    overflow: hidden
+    &.main_protection_container_item_features
+        &.open
+            .main_protection_container_item_features_ul
+                    margin-top: 0
+
+
+.main_protection_container_item_features_btn
+    color: #253238
+    letter-spacing: 0.02em
+    font-size: 24px
+    font-weight: 700
+    font-family: 'Montserrat', sans-serif
+    border: 0
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    padding: 25px
+    z-index: 999
+    background: linear-gradient(298.33deg, #FFFFFF 5.92%, #F0F0F0 113.93%)
+    &::after
+        content: ""
+        background: url(../images/rowdown.png)
+        background-size: cover
+        height: 10px
+        width: 15px
+        display: block
+        margin-left: 20px
+    &:hover
+        cursor: pointer
+
+.main_protection_container_item_features_bue
+    color: #7C9EE2
+    padding: 23px 97px
+    font-size: 28px
+    border-radius: 40px
+    border: 0
+    box-shadow: -12px -12px 20px rgba(255, 255, 255, 0.8), 10px 10px 20px rgba(166, 180, 200, 0.7)
+    background: linear-gradient(134.17deg, #FFFFFF 4.98%, #F0F0F0 94.88%), linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%)
+    margin-top: 30px
+    margin-bottom: 30px
+    &:hover
+        cursor: pointer
+        background: linear-gradient(157.89deg, #FDFDFD 18.84%, #DEDEDE 86.18%)
+        box-shadow: -12px -12px 20px #FFFFFF, 10px 10px 20px rgba(166, 180, 200, 0.9)
+    &:active
+        background: linear-gradient(134.17deg, #FFFFFF 4.98%, #F0F0F0 94.88%), linear-gradient(134.17deg, #EEF0F5 4.98%, #E6E9EF 94.88%)
+        box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.75), inset 5px 5px 10px rgba(166, 180, 200, 0.75)
+
+.main_protection_container_item_features_ul
+    list-style: none
+    width: 100%
+    z-index: 1
+    margin-top: -215px
+
+
+.main_protection_container_item_features_li
+    font-size: 24px
+    font-weight: 700
+    font-family: 'Montserrat', sans-serif
+    letter-spacing: 0.02em
+    color: #253238
+    padding: 25px
+    border-top: 1px solid #CED5DC
+    &:last-child
+        padding-bottom: 0
+
+.main_contact
+    background: url(../images/backchoi.jpg)
+    background-size: cover
+    padding: 0 112px
+    display: flex
+    justify-content: space-between
+    margin-top: 105px
+
+.main_contact_left
+    padding: 60px 0
+
+.main_contact_left_title
+    letter-spacing: 0.02em
+    font-size: 40px
+    color: #FFF
+    font-family: 'Montserrat-Bold', sans-serif
+    font-weight: 800
+
+.main_contact_left_text
+    letter-spacing: 0.02em
+    font-size: 18px
+    max-width: 569px
+    color: #FFF
+    margin-top: 10px
+
+.main_contact_left_under
+    margin-top: 42px
+    
+.main_contact_left_under_btn
+    color: #FFF
+    letter-spacing: 0.02em
+    box-shadow: -1px -1px 0px #6BA89D, -10px -10px 20px rgba(107, 157, 145, 0.15), 10px 10px 20px rgba(71, 103, 93, 0.4)
+    background: linear-gradient(180deg, #02B3AF 0%, #1DDEDA 100%)
+    border-radius: 40px
+    border: 0
+    padding: 15px 45px
+    font-size: 28px
+    &:hover
+        cursor: pointer
+        background: linear-gradient(180deg, #0ACAC6 0%, #15FCF7 100%), linear-gradient(157.89deg, #FDFDFD 18.84%, #DEDEDE 86.18%)
+        box-shadow: -12px -12px 20px #0acac6, 10px 10px 20px rgb(166 200 198 / 90%)
+    &:active
+        background: linear-gradient(180deg, #02B3AF 0%, #1DDEDA 100%)
+        box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.25), inset 5px 5px 10px rgba(166, 180, 200, 0.75)
+
+
+.main_contact_left_under_separate
+    margin: 0 40px
+    color: #D0D9DE
+    letter-spacing: 0.02em
+    font-size: 18px
+
+.main_contact_left_under_tel
+    text-decoration: none
+    color: #FFF
+    letter-spacing: 0.02em
+    font-size: 24px
+    font-weight: 700
+
+.main_contact_man
+    margin-top: -80px
+    margin-right: 88px
+
+.footer
+    padding: 60px 0
+    background: #fff
+
+.footer_container
+    padding: 0 111px
+    padding-top: 40px
+    border-top: 1px solid #CED5DC
+    display: flex
+    justify-content: space-between
+
+.footer_container_menu
+    &.second
+        .footer_container_menu_item
+            a
+                font-size: 12px
+            &:nth-child(1n+2)
+                margin-left: 20px
+.footer_container_menu_items
+    list-style: none
+    display: flex
+    margin-top: 24px
+
+.footer_container_menu_item
+    a
+        text-decoration: none
+        letter-spacing: 0.02em
+        color: #455B66
+        font-size: 18px
+        &:hover
+            cursor: pointer
+            color: #b1c1ca
+    &:nth-child(1n+2)
+        margin-left: 40px
+
+.footer_container_right_social
+    margin-top: 60px
+
+.footer_container_right_social_items
+    list-style: none
+    display: flex
+    
+.footer_container_right_social_item
+    a
+        img
+            width: 20px
+            height: 20px
+    &:nth-child(1n+2)
+        margin-left: 10px
+    
+@media ( max-width: 1420px )
+    .main_reviews_item
+        width: 100%
+    
