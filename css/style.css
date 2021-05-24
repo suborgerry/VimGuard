@@ -228,15 +228,34 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
-.header_first_line_lang button::before {
+.header_first_line_lang button:hover {
+  cursor: pointer;
+}
+
+.header_first_line_lang_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header_first_line_lang_buttons::before {
   content: url(../images/arrowdown.png);
   display: block;
   position: relative;
   bottom: 2px;
-  margin-right: 3px;
+  margin: 0 3px;
 }
-.header_first_line_lang button:hover {
-  cursor: pointer;
+
+.header_first_line_lang_buttons_container {
+  position: absolute;
+  margin-left: 20px;
+  height: 27px;
+  overflow: hidden;
+}
+.header_first_line_lang_buttons_container.open {
+  height: 100px;
 }
 
 .header_info_title {
